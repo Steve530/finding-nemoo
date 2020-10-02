@@ -110,7 +110,10 @@ function draw(){
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
             }); 
         }
-
+        if(pipe[i].x == 5){
+            score++;
+            scor.play();
+        }
         // detect collision
         
         if( bX + bird.width >= pipe[i].x && 
@@ -118,6 +121,7 @@ function draw(){
             (bY <= pipe[i].y + pipeNorth.height || 
                 bY+bird.height >= pipe[i].y+constant) )
                  {
+              
            // location.reload(); // reload the page
            bX = 10;
            bY = 150;
@@ -127,12 +131,13 @@ function draw(){
                 x : cvs.width,
                 y : 0
             };
+            score = 0;
         }
         
-        if(pipe[i].x == 5){
-            score++;
-            scor.play();
-        }
+        // if(pipe[i].x == 5){
+        //     score++;
+        //     scor.play();
+        // }
         
         
     }
