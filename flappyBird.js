@@ -118,7 +118,15 @@ function draw(){
             (bY <= pipe[i].y + pipeNorth.height || 
                 bY+bird.height >= pipe[i].y+constant) )
                  {
-            location.reload(); // reload the page
+           // location.reload(); // reload the page
+           bX = 10;
+           bY = 150;
+           pipe = [];
+
+            pipe[0] = {
+                x : cvs.width,
+                y : 0
+            };
         }
         
         if(pipe[i].x == 5){
