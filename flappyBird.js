@@ -24,7 +24,7 @@ var constant;
 var bX = 10;
 var bY = 150;
 
-var gravity = 0.9;
+var gravity = 0.2;
 
 var score = 0;
 
@@ -104,7 +104,7 @@ function draw(){
         pipe[i].x--;
         pipe[i].x--;
        
-        if( pipe[i].x == 125 ){
+        if( pipe[i].x == 125 ){ 
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
