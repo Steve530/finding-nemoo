@@ -59,7 +59,7 @@ document.onkeydown = function(e) {
             break;
 //right
         case 39:
-            bX += 25;
+            bX += 25;   
             fly.play();
             break;
         case 68:
