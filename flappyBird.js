@@ -48,7 +48,7 @@ document.onkeydown = function(e) {
             fly.play();
             break;
 
-//up
+//upsss
         case 38:
             bY -= 25;
             fly.play();
