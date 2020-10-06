@@ -30,7 +30,7 @@ var score = 0;
 
 // audio files 
    
-var fly = new Audio();
+var fly = new Audio();  
 var scor = new Audio();  
 
 fly.src = "sounds/fly.mp3";
