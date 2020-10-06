@@ -30,11 +30,11 @@ var score = 0;
 
 // audio files 
    
-var fly = new Audio();  
+var fly = new Audio();    
 var scor = new Audio();  
 
 fly.src = "sounds/fly.mp3";
-scor.src = "sounds/score.mp3";  
+scor.src = "sounds/score.mp3";    
 
 document.onkeydown = function(e) {
     switch (e.keyCode) {
