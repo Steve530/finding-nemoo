@@ -106,7 +106,7 @@ function draw(){
 
         
        
-     
+       
         if( pipe[i].x == 125 ){   
             pipe.push({
                 x : cvs.width,
