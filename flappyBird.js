@@ -18,7 +18,7 @@ pipeSouth.src = "images/pipeSouth.png";
 
 // variables
 
-var gap = 125;
+var gap = 155;
 var constant;
 
 var bX = 10;
@@ -103,6 +103,9 @@ function draw(){
         pipe[i].x--;
         pipe[i].x--;
         pipe[i].x--;
+
+        
+       
      
         if( pipe[i].x == 125 ){  
             pipe.push({
