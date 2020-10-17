@@ -102,7 +102,7 @@ function draw(){
              
         pipe[i].x--;
         pipe[i].x--;
-        pipe[i].x--;
+        pipe[i].x--;  
 
         
        
