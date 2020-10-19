@@ -109,7 +109,7 @@ function draw(){
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
-            });    
+            });     
         }
         if(pipe[i].x == 5){
             score++;
