@@ -112,7 +112,7 @@ function draw(){
             });     
         }
         if(pipe[i].x == 5){  
-            score++;     
+            score++;      
             scor.play();
         }
         // detect collision
