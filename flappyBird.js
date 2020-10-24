@@ -95,7 +95,7 @@ function draw(){
       
     
     for(var i = 0; i < pipe.length; i++){
-        
+          
         constant = pipeNorth.height+gap;
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
