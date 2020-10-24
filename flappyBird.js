@@ -101,7 +101,7 @@ function draw(){
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
              
         pipe[i].x -=3;
-        // pipe[i].x--;  
+        // pipe[i].x--;   
         // pipe[i].x--;    
   
               
