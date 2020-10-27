@@ -94,7 +94,7 @@ document.onkeydown = function(e) {
 
 var pipe = [];  
 
-pipe[0] = {
+pipe[0] = {  
     x : cvs.width,
     y : 0
 };
