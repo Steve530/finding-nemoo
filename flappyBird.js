@@ -92,7 +92,7 @@ document.onkeydown = function(e) {
 
 // pipe coordinates
 
-var pipe = [];  
+var pipe = [];   
 
 pipe[0] = {  
     x : cvs.width,
