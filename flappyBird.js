@@ -89,7 +89,7 @@ document.onkeydown = function(e) {
             break;
     }
 };
-
+ 
 // pipe coordinates
 
 var pipe = [];   
