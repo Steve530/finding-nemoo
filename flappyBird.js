@@ -91,7 +91,7 @@ document.onkeydown = function(e) {
 };
  
 // pipe coordinates
-
+ 
 var pipe = [];   
 
 pipe[0] = {    
