@@ -1,5 +1,5 @@
 var cvs = document.getElementById("canvas");
-var ctx = cvs.getContext("2d");
+var ctx = cvs.getContext("2d"); 
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
