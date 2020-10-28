@@ -9,7 +9,7 @@ var ctx = cvs.getContext("2d");
 // webcam.start()   
 //   .then(result =>{
 //     console.log("webcam started");
-//   })
+//   }) 
 //   .catch(err => {
 //     console.log(err);
 // });   
