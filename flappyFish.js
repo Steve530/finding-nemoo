@@ -12,7 +12,7 @@ var ctx = cvs.getContext("2d");
 //   })  
 //   .catch(err => {
 //     console.log(err);  
-// });   
+// });     
  // load images     
 
 var bird = new Image();
