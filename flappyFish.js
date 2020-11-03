@@ -14,7 +14,7 @@ var ctx = cvs.getContext("2d");
 //     console.log(err);     
 // });     
  // load images     
-
+ 
 var bird = new Image(); 
 var bg = new Image();  
 var fg = new Image();    
