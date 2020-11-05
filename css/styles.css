@@ -34,7 +34,7 @@
   top: 30px;
 
 }
-@media only screen and (min-width: 968px) {
+@media only screen and (min-width: 768px) {
   /* For desktop: */
   #button-up {display: none;}
   #button-down {display: none;}
