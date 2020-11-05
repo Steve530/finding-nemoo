@@ -1,5 +1,13 @@
 var cvs = document.getElementById("canvas");
+
+
 var ctx = cvs.getContext("2d"); 
+
+var ups = document.getElementById("button-up");
+var downs = document.getElementById("button-down");
+var lefts = document.getElementById("button-left");
+var rights = document.getElementById("button-right");
+
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
@@ -26,6 +34,7 @@ bg.src = "images/bg.png";
 fg.src = "images/fg.png";
 pipeNorth.src = "images/pipeNorth.png";
 pipeSouth.src = "images/pipeSouth.png";
+
 
 
 // variables
@@ -89,7 +98,14 @@ document.onkeydown = function(e) {
             break;
     }
 };
- 
+ups.addEventListener("click", function(){  bY -= 25;
+    fly.play(); });
+downs.addEventListener("click", function(){  bY += 25;
+    fly.play(); });
+lefts.addEventListener("click", function(){  bX -= 25;
+    fly.play(); });
+rights.addEventListener("click", function(){  bX += 25;
+    fly.play(); });
 // pipe coordinates
  
 var pipe = [];   
@@ -154,6 +170,7 @@ function draw(){
         
         
     }
+    
 
     ctx.drawImage(fg,0,cvs.height - fg.height+60,0,0);
     
