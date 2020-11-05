@@ -3,18 +3,20 @@
 }
 
 #button-down {
-  background-color: rgb(238, 132, 234);
+  background-color: rgb(98, 150, 189);
   position: absolute;
   border-radius: 4px;
   top: 60px;
   left: 220px;
+  color: antiquewhite;
 }
 #button-up {
-  background-color: rgb(238, 132, 234);
+  background-color: rgb(98, 150, 189);
   border-radius: 4px;
   position: absolute;
   width: 50px;
   left: 220px;
+  color: antiquewhite;
 }
 #button-left {
   background-color: rgb(238, 132, 234);
@@ -22,7 +24,8 @@
   position: absolute;
   left: 160px;
   top: 30px;
-  width: 50px;
+  width: 50px; 
+  color: antiquewhite;
 
 }
 #button-right {
@@ -30,7 +33,7 @@
   border-radius: 4px;
   position: absolute;
   left: 280px;
-
+  color: antiquewhite;
   top: 30px;
 
 }
