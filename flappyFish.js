@@ -7,7 +7,7 @@ var ups = document.getElementById("button-up");
 var downs = document.getElementById("button-down");
 var lefts = document.getElementById("button-left");
 var rights = document.getElementById("button-right");
-
+var gradient = ctx.createRadialGradient(105, 105, 20, 120, 120, 50);
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
@@ -34,8 +34,6 @@ bg.src = "images/bg.png";
 fg.src = "images/fg.png";
 pipeNorth.src = "images/pipeNorth.png";
 pipeSouth.src = "images/pipeSouth.png";
-
-
 
 // variables
 
@@ -127,24 +125,34 @@ function draw(){
         constant = pipeNorth.height+gap;
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
-             
-        pipe[i].x -=3;
+             let position = pipe[i].x
+        if (score < 3){
+            pipe[i].x -=3;
+        }
+       
+        if (score >= 3){
+           
+            pipe[i].x -=5;
+        }
+        // if (score >= 10){
+        //     pipe[i].x -=6;
+        // }
         // pipe[i].x--;   
         // pipe[i].x--;    
   
               
-        if( pipe[i].x == 125 ){   
+        if( pipe[i].x > 150&& pipe[i].x <156){   
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
             });     
         }
-        if(pipe[i].x == 5){    
+        if(pipe[i].x < 8 && pipe[i].x >3){    
             score++;      
             scor.play();
         }
         // detect collision
-        
+   
         if( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
             (bY <= pipe[i].y + pipeNorth.height || 
@@ -182,6 +190,18 @@ function draw(){
     ctx.font = "20px Verdana";
     ctx.fillText("Score : "+score,10,cvs.height-10);
     
+    
+    gradient.addColorStop(0, 'rgba(250,250,255,0)');
+    gradient.addColorStop(0.75, 'rgba(230,250,255,1.0)');
+    gradient.addColorStop(1, 'rgba(0,0,255,0)');
+
+// draw the gradient (note that we dont bother drawing a circle, this is more efficient and less work!)
+// but make sure it covers the entire gradient
+    ctx.fillStyle = gradient;
+    // ctx.fillRect(0, 0, 300, 300);​
+
+
+
     requestAnimationFrame(draw);
     
 }

@@ -1,7 +1,10 @@
 .buttons{
   position: relative;
 }
-
+#finding-nemo{
+  text-align: center;
+  color: rgb(59, 135, 175);
+}
 #button-down {
   background-color: rgb(98, 150, 189);
   position: absolute;
