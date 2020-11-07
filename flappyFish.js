@@ -128,7 +128,7 @@ function initiate_the_game(){
             ctx.drawImage(bg, 0, 0);     
         };
     }   
-
+ 
 }
 
 function draw(){
