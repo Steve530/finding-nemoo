@@ -8,6 +8,8 @@ var downs = document.getElementById("button-down");
 var lefts = document.getElementById("button-left");
 var rights = document.getElementById("button-right");
 
+var starts = document.getElementById("button-start");
+
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
@@ -28,7 +30,7 @@ var bg = new Image();
 var fg = new Image();    
 var pipeNorth = new Image();
 var pipeSouth = new Image();  
-          // just to test!
+
 bird.src = "images/bird.png";
 bg.src = "images/bg.png";
 fg.src = "images/fg.png";
@@ -67,7 +69,7 @@ document.onkeydown = function(e) {
             fly.play();
             break;
 
-//upsss
+//up
         case 38:
             bY -= 25;
             fly.play();
@@ -104,6 +106,9 @@ lefts.addEventListener("click", function(){  bX -= 25;
     fly.play(); });
 rights.addEventListener("click", function(){  bX += 25;
     fly.play(); });
+
+starts.addEventListener("click", function(){ draw()  });
+
 // pipe coordinates
  
 var pipe = [];   
@@ -114,12 +119,22 @@ pipe[0] = {
 };
 
 // draw images
+function initiate_the_game(){
+    // ctx.drawImage(bg,0,0);
+    if (bg.complete) {
+        ctx.drawImage(bg, 0, 0);
+    } else {
+        bg.onload = function () {
+            ctx.drawImage(bg, 0, 0);    
+        };
+    }
+
+}
 
 function draw(){
     
     ctx.drawImage(bg,0,0);
-      
-     
+
     for(var i = 0; i < pipe.length; i++){
           
         constant = pipeNorth.height+gap;
@@ -134,13 +149,7 @@ function draw(){
            
             pipe[i].x -=5;
         }
-        // if (score >= 10){
-        //     pipe[i].x -=6;
-        // }
-        // pipe[i].x--;   
-        // pipe[i].x--;    
-  
-              
+
         if( pipe[i].x > 150&& pipe[i].x <156){   
             pipe.push({
                 x : cvs.width,
@@ -152,13 +161,13 @@ function draw(){
             scor.play();
         }
         // detect collision
-   
-        if( bX + bird.width >= pipe[i].x && 
+        var is_alive = ( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
             (bY <= pipe[i].y + pipeNorth.height || 
                 bY+bird.height >= pipe[i].y+constant) )
+        var game_over = false
+        if (is_alive)
                  {
-              
            // location.reload(); // reload the page
            bX = 10;
            bY = 150;
@@ -169,13 +178,8 @@ function draw(){
                 y : 0
             };
             score = 0;
+            game_over = true
         }
-        
-        // if(pipe[i].x == 5){
-        //     score++;
-        //     scor.play();
-        // }
-        
         
     }
     
@@ -187,16 +191,19 @@ function draw(){
     bY += gravity;
     
     ctx.fillStyle = "#000";
-    ctx.font = "20px Verdana";
+    ctx.font = "40px Verdana";
     ctx.fillText("Score : "+score,10,cvs.height-10);
     
-    requestAnimationFrame(draw);
+    game_over ?  initiate_the_game() : requestAnimationFrame(draw);
     
 }
 
-draw();
 
+ function playgame() {
+    initiate_the_game()
+}
 
+playgame()
 
 
 
