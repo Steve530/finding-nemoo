@@ -26,7 +26,7 @@ var gradient = ctx.createRadialGradient(105, 105, 20, 120, 120, 50);
 var bird = new Image();  
 var bg = new Image();  
 var fg = new Image();    
-var pipeNorth = new Image();
+var pipeNorth = new Image(); 
 var pipeSouth = new Image();  
           // just to test!
 bird.src = "images/bird.png";
