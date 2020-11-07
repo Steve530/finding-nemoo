@@ -7,7 +7,7 @@ var ups = document.getElementById("button-up");
 var downs = document.getElementById("button-down");
 var lefts = document.getElementById("button-left");
 var rights = document.getElementById("button-right");
-var gradient = ctx.createRadialGradient(105, 105, 20, 120, 120, 50);
+
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
@@ -25,8 +25,8 @@ var gradient = ctx.createRadialGradient(105, 105, 20, 120, 120, 50);
   
 var bird = new Image();  
 var bg = new Image();  
-var fg = new Image();     
-var pipeNorth = new Image(); 
+var fg = new Image();    
+var pipeNorth = new Image();
 var pipeSouth = new Image();  
           // just to test!
 bird.src = "images/bird.png";
@@ -147,7 +147,7 @@ function draw(){
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
             });     
         }
-        if(pipe[i].x < 8 && pipe[i].x >3){    
+         if(pipe[i].x < 8 && pipe[i].x >3){    
             score++;      
             scor.play();
         }
@@ -190,18 +190,6 @@ function draw(){
     ctx.font = "20px Verdana";
     ctx.fillText("Score : "+score,10,cvs.height-10);
     
-    
-    gradient.addColorStop(0, 'rgba(250,250,255,0)');
-    gradient.addColorStop(0.75, 'rgba(230,250,255,1.0)');
-    gradient.addColorStop(1, 'rgba(0,0,255,0)');
-
-// draw the gradient (note that we dont bother drawing a circle, this is more efficient and less work!)
-// but make sure it covers the entire gradient
-    ctx.fillStyle = gradient;
-    // ctx.fillRect(0, 0, 300, 300);​
-
-
-
     requestAnimationFrame(draw);
     
 }
