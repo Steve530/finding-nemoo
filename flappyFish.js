@@ -127,7 +127,7 @@ function initiate_the_game(){
         bg.onload = function () {
             ctx.drawImage(bg, 0, 0);    
         };
-    }
+    } 
 
 }
 
