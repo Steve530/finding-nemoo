@@ -124,7 +124,7 @@ function initiate_the_game(){
     if (bg.complete) {
         ctx.drawImage(bg, 0, 0);
     } else {
-        bg.onload = function () {
+        bg.onload = function () { 
             ctx.drawImage(bg, 0, 0);     
         };
     }  
