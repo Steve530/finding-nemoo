@@ -3,21 +3,39 @@
   <head>   
     <title>Finding Nemoo | by Steve Cao</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
   </head>   
-  <body>                                     
-   <h3 id="finding-nemo">Finding Nemoo</h3>                               
+  <body>   
+                                      
+   <h3 id="finding-nemo">Finding Nemoo</h3>   
+   <div class="dropdown">
+        <i  onclick="myFunction()" id="dropbtn" class="fa fa-bars"> i</i>
+        <div id="myDropdown" class="dropdown-content">
+          <P id='info'> info</P>
+        </div>
+  </div>                            
    <p id="centerit">
      <canvas id="canvas" width="720" height="544"></canvas>
    </p>
-   <div class = 'buttons'>
-    <button id = "button-right">Right</button>  
-    <button id = "button-left">Left</button>
-    <button id = "button-up">Up</button>   
-    <button id = "button-down">Down</button>
+   <p id='buttons-tag'>
+     <p id='button-start-tag'> <button id = "button-start">Start</button>  </p>
 
-   </div>
-   <button id = "button-start">start</button>  
+
+     
+
+     <p id = 'buttons'> 
+      <button id = "button-right">Right</button>  
+      <button id = "button-left">Left</button>
+      <button id = "button-up">Up</button>   
+      <button id = "button-down">Down</button>
+     </p>
+     
+   </p>
+   
+   
  
    <!-- <video id="webcam" autoplay playsinline width="640" height="480"></video>
    <canvas id="canvas" class="d-none"></canvas>

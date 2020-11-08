@@ -7,9 +7,9 @@ var ups = document.getElementById("button-up");
 var downs = document.getElementById("button-down");
 var lefts = document.getElementById("button-left");
 var rights = document.getElementById("button-right");
+var menu = document.getElementById("menu");
 
 var starts = document.getElementById("button-start");
-
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
@@ -109,6 +109,7 @@ rights.addEventListener("click", function(){  bX += 25;
 
 starts.addEventListener("click", function(){ draw()  });
 
+// menu.addEventListener("click", function(){ alert('yo')  });
 // pipe coordinates
  
 var pipe = [];   
@@ -130,6 +131,23 @@ function initiate_the_game(){
     }   
  
 }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('#dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
 
 function draw(){
     
@@ -144,12 +162,9 @@ function draw(){
         if (score < 3){
             pipe[i].x -=3;
         }
-       
         if (score >= 3){
-           
             pipe[i].x -=5;
         }
-
         if( pipe[i].x > 150&& pipe[i].x <156){   
             pipe.push({
                 x : cvs.width,
@@ -161,14 +176,15 @@ function draw(){
             scor.play();
         }
         // detect collision
-        var is_alive = ( bX + bird.width >= pipe[i].x && 
+        var is_dead = ( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
             (bY <= pipe[i].y + pipeNorth.height || 
                 bY+bird.height >= pipe[i].y+constant) )
         var game_over = false
-        if (is_alive)
+        if (is_dead)
                  {
            // location.reload(); // reload the page
+           
            bX = 10;
            bY = 150;
            pipe = [];

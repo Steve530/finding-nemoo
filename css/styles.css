@@ -1,9 +1,30 @@
-.buttons{
+#buttons{
   position: relative;
-}
+ }
+ #buttons-tag{
+   text-align: center;
+ }
 #finding-nemo{
   text-align: center;
-  color: rgb(59, 135, 175);
+  color: rgb(59, 135, 175); 
+}
+#button-start-tag {
+  text-align: center;
+}
+#button-start{
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  font-size: 24px;
+  font: bolder;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+}
+#button-start:hover {
+  background-color:rgb(238, 132, 234);
 }
 #button-down {
   background-color: rgb(98, 150, 189);
@@ -60,3 +81,66 @@
 #centerit {
  text-align: center;
 }
+
+#dropbtn {
+
+  position: absolute;
+
+  top: -35px;
+  left: 76% ;
+  cursor: pointer;
+  /* z-index: 30; */
+}
+ 
+.dropdown {
+  position: relative;
+  
+}
+
+ 
+.dropdown-content  {
+  display: none;
+  position: absolute;
+  background-color: #a499e2;
+  width: 150px;
+  height: 150px;
+  top: -5px;
+  left: 76.3%;
+  border-radius: 15px;
+  color: aliceblue;
+  font:16px ;
+  font-weight: 600;
+  /* margin-left: 5px; */
+
+}
+
+.dropdown-content p:after {
+  content: ".";
+  position: relative;
+  top: -43px;
+  left: 15px;
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  border-color: transparent transparent #a499e2;
+}
+
+
+ 
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+/* .show  ::before  {
+  content: "";
+  width: 3px; 
+  height: 3px; 
+   display: block;
+  clear: both;
+} */
