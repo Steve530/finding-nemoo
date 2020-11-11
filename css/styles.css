@@ -3,7 +3,7 @@
  }
  #buttons-tag{
    text-align: center;  
- }
+ } 
  body {
   overflow: hidden; /* Hide scrollbars */
 }
@@ -104,7 +104,7 @@
 .dropdown-content  {
   display: none;
   position: absolute;
-  background-color: #a499e2;
+  background-color: #9880c7;
   width: 250px;
   height: 350px;
   top: -5px;
@@ -129,10 +129,8 @@
   line-height: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: transparent transparent #a499e2;
+  border-color: transparent transparent #9880c7;
 }
-
-
  
 .dropdown-content a:hover {background-color: #ddd}
 
@@ -140,10 +138,3 @@
 .show {
   display:block;
 }
-/* .show  ::before  {
-  content: "";
-  width: 3px; 
-  height: 3px; 
-   display: block;
-  clear: both;
-} */
