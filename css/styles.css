@@ -6,13 +6,16 @@
  } 
  body {   
   overflow: hidden; /* Hide scrollbars */
+  background-color: rgb(160, 206, 206);
 }
 #finding-nemo{  
   text-align: center;     
-  color: rgb(59, 135, 175);       
+  color: rgb(59, 135, 175);   
+  font-family: sans-serif; 
 }         
 #button-start-tag {  
   text-align: center;  
+  font-family: sans-serif; 
 }  
 #button-start{ 
   background-color: DodgerBlue;       
@@ -25,6 +28,7 @@
   font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
   border-radius: 5px;
+  font-family: sans-serif; 
 }
 #button-start:hover {
   background-color:rgb(238, 132, 234);
@@ -64,6 +68,7 @@
   top: 30px; 
  
 }  
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   #button-up {display: none;}
@@ -113,16 +118,21 @@
   color: aliceblue;
   font:16px ;
   font-weight: 600;
-  /* margin-left: 5px; */
+  font-family: sans-serif; 
+  margin-right: 5px;
 
 }
-
+.instruction {
+  margin-right: 10px;
+  /* background-color: brown; */
+}
 .dropdown-content p:after {
   content: ".";
   position: relative;
   top: -25px;
   left: 15px;
   display: block;
+  margin-right: 10px;  
   width: 0;
   height: 0;
   font-size: 0;
