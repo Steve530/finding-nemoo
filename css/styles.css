@@ -128,7 +128,7 @@
 }
 .dropdown-content p:after {
   content: ".";
-  position: relative;
+  position: relative; 
   top: -25px;
   left: 15px;
   display: block;  
