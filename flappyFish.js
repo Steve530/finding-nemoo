@@ -123,7 +123,7 @@ function initiate_the_game(){
         ctx.drawImage(bg, 0, 0);
     } else { 
         bg.onload = function () {  
-            ctx.drawImage(bg, 0, 0);     
+            ctx.drawImage(bg, 0, 0);      
         };
     }   
 }
