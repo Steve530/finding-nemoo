@@ -1,15 +1,12 @@
 var cvs = document.getElementById("canvas");
-
-
 var ctx = cvs.getContext("2d"); 
-
 var ups = document.getElementById("button-up");
 var downs = document.getElementById("button-down");
 var lefts = document.getElementById("button-left");
 var rights = document.getElementById("button-right");
 var menu = document.getElementById("menu");
-
 var starts = document.getElementById("button-start");
+var hard = document.getElementById("hard-mode");
 //
 // const webcamElement = document.getElementById('webcam');
 // const canvasElement = document.getElementById('canvas');
@@ -107,9 +104,9 @@ lefts.addEventListener("click", function(){  bX -= 25;
 rights.addEventListener("click", function(){  bX += 25;
     fly.play(); });
 
-starts.addEventListener("click", function(){ draw()  });
+starts.addEventListener("click", function(){ let hardstart = true; draw(hardstart)  });
+hard.addEventListener("click", function(){ let hardstart = false ; draw(hardstart)  });
 
-// menu.addEventListener("click", function(){ alert('yo')  });
 // pipe coordinates
  
 var pipe = [];   
@@ -118,7 +115,7 @@ pipe[0] = {
     x : cvs.width,
     y : 0
 };
-
+   
 // draw images
 function initiate_the_game(){
     // ctx.drawImage(bg,0,0);
@@ -129,12 +126,10 @@ function initiate_the_game(){
             ctx.drawImage(bg, 0, 0);     
         };
     }   
- 
 }
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-    
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('#dropbtn')) {
@@ -149,32 +144,32 @@ function myFunction() {
     }
   }
 
-function draw(){
+function draw(hardstart){
     
     ctx.drawImage(bg,0,0);
-
     for(var i = 0; i < pipe.length; i++){
-          
         constant = pipeNorth.height+gap;
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
-             let position = pipe[i].x
-        if (score < 3){
+            
+        if ((score < 3)){
             pipe[i].x -=3;
         }
-        if (score >= 3){
+        if (!hardstart||(score >= 3)) {
             pipe[i].x -=5;
         }
+      
         if( pipe[i].x > 150&& pipe[i].x <156){   
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
             });     
         }
-         if(pipe[i].x < 8 && pipe[i].x >3){    
+         if(pipe[i].x < 9 && pipe[i].x >3){    
             score++;      
             scor.play();
         }
+
         // detect collision
         var is_dead = ( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
@@ -210,7 +205,7 @@ function draw(){
     ctx.font = "40px Verdana";
     ctx.fillText("Score : "+score,10,cvs.height-10);
     
-    game_over ?  initiate_the_game() : requestAnimationFrame(draw);
+    game_over ?  initiate_the_game() : requestAnimationFrame(()=> draw(hardstart));
     
 }
 

@@ -17,6 +17,20 @@
   text-align: center;  
   font-family: sans-serif; 
 }  
+#hard-mode{ 
+  background-color: rgb(96, 103, 109);       
+  border: none;  
+  color: white; 
+  padding: 6px 8px;
+  font-size: 24px;
+  font: bolder;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: sans-serif; 
+}
 #button-start{ 
   background-color: DodgerBlue;       
   border: none;  
@@ -31,6 +45,9 @@
   font-family: sans-serif; 
 }
 #button-start:hover {
+  background-color:rgb(238, 132, 234);
+}
+#hard-mode:hover {
   background-color:rgb(238, 132, 234);
 }
 #button-down {
