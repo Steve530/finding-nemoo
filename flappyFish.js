@@ -9,7 +9,7 @@ var starts = document.getElementById("button-start");
 var hard = document.getElementById("hard-mode");  
 //
 // const webcamElement = document.getElementById('webcam');
-// const canvasElement = document.getElementById('canvas');
+// const canvasElement = document.getElementById('canvas'); 
 // const snapSoundElement = document.getElementById('snapSound');
 // const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
   
