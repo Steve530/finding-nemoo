@@ -166,7 +166,7 @@ function draw(hardstart){
             });     
         }
          if(pipe[i].x < 9 && pipe[i].x >3){    
-            score++;      
+            score++;       
             scor.play();
         }
         console.log(pipe[i].x)
