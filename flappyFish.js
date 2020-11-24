@@ -147,19 +147,19 @@ function myFunction() {
 function draw(hardstart){
     
     ctx.drawImage(bg,0,0);
-    for(var i = 0; i < pipe.length; i++){
+    for(let i = 0; i < pipe.length; i++){
         constant = pipeNorth.height+gap;
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
             
-        if ((score < 3)){
-            pipe[i].x -=3;
+        if ((hardstart)){
+            pipe[i].x = (pipe[i].x - 3 - Math.floor(score/3))
         }
-        if (!hardstart||(score >= 3)) {
-            pipe[i].x -=5;
+        if (!hardstart) { 
+            pipe[i].x -=6;
         }
       
-        if( pipe[i].x > 150&& pipe[i].x <156){   
+        if(( pipe[i].x > 150&& pipe[i].x <159) && !(pipe[i+1])){   
             pipe.push({
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
@@ -169,7 +169,7 @@ function draw(hardstart){
             score++;      
             scor.play();
         }
-
+        console.log(pipe[i].x)
         // detect collision
         var is_dead = ( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
