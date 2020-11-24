@@ -167,7 +167,7 @@ function draw(hardstart){
         }
          if(pipe[i].x < 9 && pipe[i].x >3){    
             score++;        
-            scor.play();
+            scor.play(); 
         }
         console.log(pipe[i].x)
         // detect collision
