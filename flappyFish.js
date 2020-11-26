@@ -165,7 +165,7 @@ function draw(hardstart){
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
             });      
         }
-         if((pipe[i].x < 9 && pipe[i].x >3)){      
+         if((pipe[i].x < 9 && pipe[i].x >3)){       
             score++;        
             scor.play();  
         }
