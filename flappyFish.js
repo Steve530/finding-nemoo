@@ -156,7 +156,7 @@ function draw(hardstart){
             pipe[i].x = (pipe[i].x - 3 - Math.floor(score/2))
         }
         if (!hardstart) {  
-            pipe[i].x -=6;    
+            pipe[i].x -=6;      
         }      
          
         if(( pipe[i].x > 150&& pipe[i].x <159) && !(pipe[i+1])){   
