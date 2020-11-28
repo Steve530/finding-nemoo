@@ -160,7 +160,7 @@ function draw(hardstart){
         }      
          
         if(( pipe[i].x > 150&& pipe[i].x <159) && !(pipe[i+1])){   
-            pipe.push({   
+            pipe.push({    
                 x : cvs.width,
                 y : Math.floor(Math.random()*pipeNorth.height)-pipeNorth.height
             });       
