@@ -155,7 +155,7 @@ function draw(hardstart){
         if ((hardstart)){
             pipe[i].x = (pipe[i].x - 3 - Math.floor(score/2))
         }
-        if (!hardstart) {  
+        if (!hardstart) {   
             pipe[i].x -=6;              
         }          
             
