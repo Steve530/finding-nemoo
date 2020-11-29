@@ -158,7 +158,7 @@ function draw(hardstart){
         if (!hardstart) {  
             pipe[i].x -=6;              
         }          
-          
+           
         if(( pipe[i].x > 150&& pipe[i].x <159) && !(pipe[i+1])){   
             pipe.push({    
                 x : cvs.width,
