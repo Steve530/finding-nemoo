@@ -46,7 +46,7 @@ var gravity = 0.1;
      
 var score = 0; 
     
-// audio files    
+// audio files     
          
 var fly = new Audio();    
 var scor = new Audio();  
