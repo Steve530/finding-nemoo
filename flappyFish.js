@@ -152,7 +152,7 @@ function draw(hardstart){
         ctx.drawImage(pipeNorth,pipe[i].x,pipe[i].y);
         ctx.drawImage(pipeSouth,pipe[i].x,pipe[i].y+constant);
             
-        if ((hardstart)){
+        if ((hardstart)){  
             pipe[i].x = (pipe[i].x - 3 - Math.floor(score/2))
         }
         if (!hardstart) {   
