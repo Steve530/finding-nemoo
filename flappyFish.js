@@ -145,7 +145,7 @@ function myFunction() {
   }
 
 function draw(hardstart){ 
-    
+     
     ctx.drawImage(bg,0,0);
     for(let i = 0; i < pipe.length; i++){ 
         constant = pipeNorth.height+gap;
