@@ -5,7 +5,7 @@ var downs = document.getElementById("button-down");
 var lefts = document.getElementById("button-left");  
 var rights = document.getElementById("button-right");  
 var menu = document.getElementById("menu");  
-var starts = document.getElementById("button-start");            
+var starts = document.getElementById("button-start");             
 var hard = document.getElementById("hard-mode");            
 //               
 // const webcamElement = document.getElementById('webcam'); 
