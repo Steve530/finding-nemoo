@@ -6,7 +6,8 @@ var lefts = document.getElementById("button-left");
 var rights = document.getElementById("button-right");    
 var menu = document.getElementById("menu");      
 var starts = document.getElementById("button-start");                    
-var hard = document.getElementById("hard-mode");                        
+var hard = document.getElementById("hard-mode");  
+                   
 //                       
 // const webcamElement = document.getElementById('webcam'); 
 // const canvasElement = document.getElementById('canvas'); 
@@ -118,8 +119,7 @@ pipe[0] = {
    
 // draw images
 function initiate_the_game(){
-    // ctx.drawImage(bg,0,0); 
-    if (bg.complete) {
+     if (bg.complete) {
         ctx.drawImage(bg, 0, 0);
     } else {    
         bg.onload = function () {   
@@ -179,7 +179,11 @@ function draw(hardstart){
         if (is_dead)
                  {
            // location.reload(); // reload the page
-           
+           // show score
+          if (score<5) alert(`Your score is ${score}. Practise makes perfect. Better luck next time!`)
+          if (score>= 5) alert(`Your score is ${score}.Good job! Most people get less than 9 points!`)
+
+
            bX = 10;
            bY = 150;
            pipe = [];
