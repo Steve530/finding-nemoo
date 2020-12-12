@@ -6,7 +6,10 @@
  } 
  body {   
   overflow: hidden; /* Hide scrollbars */
-  background-image: url("https://raw.githubusercontent.com/Steve530/finding-nemoo/master/images/back.png");
+  background-image: url("https://raw.githubusercontent.com/Steve530/finding-nemoo/master/images/back.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
 #finding-nemo{  
   text-align: center;     
