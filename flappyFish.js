@@ -183,11 +183,11 @@ function draw(hardstart){
         //   if (score<5) alert(`Your score is ${score}. Practise makes perfect. Better luck next time!`)
         //   if (score>= 5) alert(`Your score is ${score}.Good job! Most people get less than 9 points!`)
    
-      
+       
            bX = 10;
            bY = 150;
            pipe = [];
-
+  
             pipe[0] = {
                 x : cvs.width,
                 y : 0
