@@ -6,7 +6,7 @@
  } 
  body {   
   overflow: hidden; /* Hide scrollbars */
-  background-color: rgb(160, 206, 206);
+  background-image: url("https://raw.githubusercontent.com/Steve530/finding-nemoo/master/images/back.png");
 }
 #finding-nemo{  
   text-align: center;     
