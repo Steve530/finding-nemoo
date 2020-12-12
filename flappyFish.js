@@ -180,9 +180,9 @@ function draw(hardstart){
                  {
            // location.reload(); // reload the page
            // show score
-          if (score<5) alert(`Your score is ${score}. Practise makes perfect. Better luck next time!`)
-          if (score>= 5) alert(`Your score is ${score}.Good job! Most people get less than 9 points!`)
-
+        //   if (score<5) alert(`Your score is ${score}. Practise makes perfect. Better luck next time!`)
+        //   if (score>= 5) alert(`Your score is ${score}.Good job! Most people get less than 9 points!`)
+  
 
            bX = 10;
            bY = 150;
