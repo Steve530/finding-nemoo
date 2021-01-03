@@ -156,7 +156,7 @@
   /* background-color: brown; */
 } 
 .dropdown-content p:after {  
-  content: ".";
+  content: "."; 
   position: relative;   
   top: -25px; 
   left: 15px;   
