@@ -153,7 +153,7 @@
 }
 .instruction {
   margin-right: 10px; 
-  /* background-color: brown; */ 
+  /* background-color: brown; */  
 }     
 .dropdown-content p:after {   
   content: ".";   
