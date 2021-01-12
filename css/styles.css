@@ -155,7 +155,7 @@
   margin-right: 10px; 
   /* background-color: brown; */  
 }      
-.dropdown-content p:after {    
+.dropdown-content p:after {     
   content: ".";   
   position: relative;      
   top: -25px;  
