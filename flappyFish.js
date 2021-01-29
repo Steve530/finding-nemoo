@@ -174,7 +174,7 @@ function draw(hardstart){
         var is_dead = ( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
             (bY <= pipe[i].y + pipeNorth.height || 
-                bY+bird.height >= pipe[i].y+constant) )
+                bY+bird.height >= pipe[i].y+constant) ) 
         var game_over = false 
         if (is_dead)     
                  {  
