@@ -175,7 +175,7 @@ function draw(hardstart){
             bX <= pipe[i].x + pipeNorth.width && 
             (bY <= pipe[i].y + pipeNorth.height || 
                 bY+bird.height >= pipe[i].y+constant) ) 
-        var game_over = false 
+        var game_over = false  
         if (is_dead)      
                  {    
          // show score  
