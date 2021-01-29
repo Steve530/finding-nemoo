@@ -170,7 +170,7 @@ function draw(hardstart){
             scor.play();  
         }
        
-        // detect collision
+        // detect collision 
         var is_dead = ( bX + bird.width >= pipe[i].x && 
             bX <= pipe[i].x + pipeNorth.width && 
             (bY <= pipe[i].y + pipeNorth.height || 
