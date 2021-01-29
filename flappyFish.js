@@ -178,7 +178,7 @@ function draw(hardstart){
         var game_over = false 
         if (is_dead) 
                  {
-         // show score
+         // show score 
         //   if (score<5) alert(`Your score is ${score}. Practise makes perfect. Better luck next time!`)
         //   if (score>= 5) alert(`Your score is ${score}.Good job! Most people get less than 9 points!`)
    
