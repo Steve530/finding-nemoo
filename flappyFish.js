@@ -176,7 +176,7 @@ function draw(hardstart){
             (bY <= pipe[i].y + pipeNorth.height || 
                 bY+bird.height >= pipe[i].y+constant) ) 
         var game_over = false  
-        if (is_dead)             
+        if (is_dead)              
                  {                   
          // show score     
         //   if (score<5) alert(`Your score is ${score}. Practise makes perfect. Better luck next time!`)
