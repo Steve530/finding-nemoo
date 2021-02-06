@@ -192,7 +192,7 @@ function draw(hardstart){
                 y : 0 
             };  
             score = 0;    
-            game_over = true 
+            game_over = true  
         }
         
     }
