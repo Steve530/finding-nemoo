@@ -191,7 +191,7 @@ function draw(hardstart){
                 x : cvs.width, 
                 y : 0 
             };  
-            score = 0; 
+            score = 0;  
             game_over = true
         }
         
