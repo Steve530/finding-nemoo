@@ -185,12 +185,12 @@ function draw(hardstart){
        
            bX = 10;       
            bY = 150;   
-           pipe = [];     
+           pipe = [];      
          
             pipe[0] = { 
                 x : cvs.width,   
                 y : 0   
-            };   
+            };  
             score = 0;    
             game_over = true  
         }
