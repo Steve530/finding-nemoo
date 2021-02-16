@@ -189,7 +189,7 @@ function draw(hardstart){
                   
             pipe[0] = { 
                 x : cvs.width,        
-                y : 0           
+                y : 0            
             };       
             score = 0;    
             game_over = true  
