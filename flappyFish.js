@@ -187,7 +187,7 @@ function draw(hardstart){
            bY = 150;                 
            pipe = [];                      
                        
-            pipe[0] = {       
+            pipe[0] = {        
                 x : cvs.width,                
                 y : 0                
             };             
