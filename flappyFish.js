@@ -184,7 +184,7 @@ function draw(hardstart){
                 
                           
            bX = 10;                      
-           bY = 150;                    
+           bY = 150;                     
            pipe = [];                                     
                           
             pipe[0] = {             
