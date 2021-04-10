@@ -34,8 +34,8 @@ bg.src = "images/bg.png";
 fg.src = "images/fg.png";
 pipeNorth.src = "images/pipeNorth.png";
 pipeSouth.src = "images/pipeSouth.png";
-
-// variables
+ 
+// variables  
 
 var gap = 155;
 var constant;
