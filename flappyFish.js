@@ -116,7 +116,7 @@ pipe[0] = {
     x : cvs.width,
     y : 0
 };  
-   
+    
 // draw images
 function initiate_the_game(){
      if (bg.complete) {
