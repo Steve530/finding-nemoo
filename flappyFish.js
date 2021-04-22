@@ -117,7 +117,7 @@ pipe[0] = {
     y : 0 
 };  
     
-// draw images
+// draw images 
 function initiate_the_game(){
      if (bg.complete) {
         ctx.drawImage(bg, 0, 0);
