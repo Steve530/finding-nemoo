@@ -121,7 +121,7 @@ pipe[0] = {
 function initiate_the_game(){
      if (bg.complete) {  
         ctx.drawImage(bg, 0, 0);
-    } else {    
+    } else {     
         bg.onload = function () {   
             ctx.drawImage(bg, 0, 0);      
         };
