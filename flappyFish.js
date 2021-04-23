@@ -21,7 +21,7 @@ var hard = document.getElementById("hard-mode");
 //   .catch(err => {
 //     console.log(err);       
 // });     
- // load images      
+ // load images        
   
 var bird = new Image();  
 var bg = new Image();  
