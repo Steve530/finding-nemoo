@@ -20,7 +20,7 @@ var hard = document.getElementById("hard-mode");
 //   })  
 //   .catch(err => { 
 //     console.log(err);          
-// });      
+// });         
  // load images        
   
 var bird = new Image();  
