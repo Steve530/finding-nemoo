@@ -23,7 +23,7 @@ var hard = document.getElementById("hard-mode");
 // });              
  // load images          
   
-var bird = new Image();  
+var bird = new Image();   
 var bg = new Image();  
 var fg = new Image();    
 var pipeNorth = new Image();
