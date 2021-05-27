@@ -19,7 +19,7 @@ var hard = document.getElementById("hard-mode");
 //     console.log("webcam started");
 //   })  
 //   .catch(err => {  
-//     console.log(err);            
+//     console.log(err);             
 // });                 
  // load images          
   
