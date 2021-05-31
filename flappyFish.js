@@ -15,7 +15,7 @@ var hard = document.getElementById("hard-mode");
 // const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
     
 // webcam.start()   
-//   .then(result =>{ 
+//   .then(result =>{   
 //     console.log("webcam started");
 //   })  
 //   .catch(err => {  
